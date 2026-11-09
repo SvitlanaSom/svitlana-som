@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:title" content="Світлана Сом">
-<meta property="og:description" content="Розвиток і масштабування організацій. 13 років у бізнесі, культурі, благодійності та державних проєктах.">
+<meta property="og:description" content="Розвиток і масштабування організацій. Авторка проєкту «Покликані діяти».">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Світлана Сом</title>
 <meta name="description" content="Світлана Сом. Розвиток і масштабування організацій. 13 років у бізнесі, культурі, благодійності та державних проєктах.">
@@ -13,24 +13,24 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Golos+Text:wght@400;500;600&display=swap">
 <style>
 /* Layout: compact, about four screens. Hero with photo, what we do together, manifesto band, experience ledger, partners and contact. */
-/* Brand: «Покликані діяти» / Act for Change — teal, magenta, plum, bold Montserrat. */
+/* Brand: «Покликані діяти» — cornflower blue, sunflower yellow, warm cream, heavy uppercase headings. */
 :root{
-  --bg:#F4F7F7; --surface:#FFFFFF; --ink:#132626; --muted:#4F6363; --line:#D2DEDE;
-  --accent:#C8106B; --accent-soft:#FBE3EF; --band-bg:#7E1F5E; --band-fg:#FFFFFF; --band-muted:#F2C6DE;
-  --teal:#5ECDCB; --teal-ink:#0E2E2E; --teal-hi:#FFFFFF; --plum:#7E1F5E; --track:#E3EAEA;
+  --bg:#FFFDF6; --surface:#FFFFFF; --ink:#0A0A0A; --muted:#4B5563; --line:#EADFC4;
+  --accent:#0077BB; --accent-soft:#E2F1FA; --band-bg:#0083CB; --band-fg:#FFFFFF; --band-muted:#FFE29A;
+  --teal:#FFF4D9; --teal-ink:#0A0A0A; --teal-hi:#0083CB; --plum:#FECC40; --track:#F1E9D4; --sun:#FECC40;
   --f-display:"Montserrat","Arial Black",system-ui,sans-serif;
   --f-body:"Literata",Georgia,"Times New Roman",serif;
   --f-ui:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
   --wide:66rem;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0D1717; --surface:#142121; --ink:#E6F0F0; --muted:#9BB0B0; --line:#243535;
-  --accent:#FF5AA8; --accent-soft:#3A1428; --band-bg:#5A1544; --band-fg:#FFF2F8; --band-muted:#F2B6D3;
-  --teal:#14504F; --teal-ink:#E6F7F7; --teal-hi:#7FE3E1; --plum:#5A1544; --track:#243535; color-scheme:dark}}
+  --bg:#12161A; --surface:#1A2026; --ink:#F4EFE2; --muted:#AEB4BC; --line:#2C343C;
+  --accent:#5CBDF2; --accent-soft:#0E2C40; --band-bg:#0A4F7A; --band-fg:#FFFFFF; --band-muted:#FFE29A;
+  --teal:#1C2228; --teal-ink:#F4EFE2; --teal-hi:#5CBDF2; --plum:#E0B12F; --track:#2C343C; --sun:#FECC40; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0D1717; --surface:#142121; --ink:#E6F0F0; --muted:#9BB0B0; --line:#243535;
-  --accent:#FF5AA8; --accent-soft:#3A1428; --band-bg:#5A1544; --band-fg:#FFF2F8; --band-muted:#F2B6D3;
-  --teal:#14504F; --teal-ink:#E6F7F7; --teal-hi:#7FE3E1; --plum:#5A1544; --track:#243535; color-scheme:dark}
+  --bg:#12161A; --surface:#1A2026; --ink:#F4EFE2; --muted:#AEB4BC; --line:#2C343C;
+  --accent:#5CBDF2; --accent-soft:#0E2C40; --band-bg:#0A4F7A; --band-fg:#FFFFFF; --band-muted:#FFE29A;
+  --teal:#1C2228; --teal-ink:#F4EFE2; --teal-hi:#5CBDF2; --plum:#E0B12F; --track:#2C343C; --sun:#FECC40; color-scheme:dark}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -161,10 +161,28 @@ section.block{padding-block:clamp(2rem,5vw,3.25rem);border-top:1px solid var(--l
 .cc button:hover{border-color:var(--accent);color:var(--accent)}
 @media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
 @media (max-width:420px){.cards{grid-template-columns:1fr}}
-footer{font-family:var(--f-ui);font-size:.8rem;color:var(--band-fg);background:var(--plum)}
-footer a{color:var(--band-fg)}
-h2{font-weight:800}
-.name{font-weight:800;letter-spacing:-.01em}
+footer{font-family:var(--f-ui);font-size:.8rem;color:#FFFFFF;background:#23282D}
+footer a{color:#FFE29A}
+h2{font-weight:800;text-transform:uppercase;color:var(--accent);letter-spacing:0}
+.contact h2{color:var(--accent)}
+.name{font-weight:800;letter-spacing:-.01em;text-transform:uppercase;font-size:clamp(2.1rem,6.4vw,4.4rem)}
+.hero-bg::after{background:var(--sun);height:8px}
+.hero-bg .btn.primary{background:var(--sun);border-color:var(--sun);color:#0A0A0A;font-weight:600}
+.hero-bg .btn.primary:hover{color:#0A0A0A}
+.portrait::before{transform:rotate(-14deg)}
+.do li{border-top-color:var(--sun);border-top-width:3px}
+
+/* «Покликані діяти» value band */
+.band .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,11rem);gap:2rem;align-items:center}
+.band .eyebrow{color:var(--band-muted)}
+.band blockquote{margin-top:.9rem;font-weight:800;text-transform:uppercase;font-size:clamp(1.25rem,3vw,2rem)}
+.band .sk{margin-top:1.25rem;font-family:var(--f-body);font-style:italic;font-size:1.05rem;color:var(--band-muted)}
+.band .sk small{font-style:normal;font-family:var(--f-ui);font-size:.8rem;margin-left:.4rem;color:var(--band-fg);opacity:.8}
+.band p.txt{margin-top:1rem;font-family:var(--f-body);font-size:1rem;color:var(--band-fg);max-width:44rem;opacity:.95}
+.band a.more{display:inline-block;margin-top:1.25rem;font-family:var(--f-ui);font-weight:600;font-size:.92rem;color:#0A0A0A;background:var(--sun);padding:.6rem 1.05rem;border-radius:999px;text-decoration:none}
+.band a.more:hover{filter:brightness(1.05)}
+.flower{width:100%;max-width:11rem;height:auto}
+@media (max-width:700px){.band .wrap{grid-template-columns:1fr}.flower{max-width:7rem;order:-1}}
 footer .wrap{padding-block:1.25rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
 </style>
 
@@ -254,9 +272,30 @@ footer .wrap{padding-block:1.25rem;display:flex;justify-content:space-between;fl
 
 <section class="band" aria-labelledby="value-h">
   <div class="wrap">
-    <p class="eyebrow" style="color:var(--band-muted)">Моя базова цінність · проєкт «Покликані діяти»</p>
-    <blockquote id="value-h">Допомогти людині знайти своє покликання і підтримати її на цьому шляху.</blockquote>
-    <p>З цього виріс мій проєкт «Покликані діяти». І так само я працюю в кожній команді: спершу бачу людей, їхні сильні сторони, інтереси й мотиви, а вже потім посади.</p>
+    <div>
+      <p class="eyebrow">Моя базова цінність · «Покликані діяти»</p>
+      <blockquote id="value-h">Допомогти людині знайти своє покликання і підтримати її на цьому шляху</blockquote>
+      <p class="sk">«Сродна праця — найсолодша в світі річ»<small>Григорій Сковорода</small></p>
+      <p class="txt">Тему покликання я досліджую понад 25 років і дуже в неї вірю. Сковорода називав це «сродною працею»: людина робить те, до чого лежить душа, і це дає радість їй і користь усім навколо.</p>
+      <p class="txt">У Карітас України я авторка проєкту «Покликані діяти». Ми шукаємо в містах і селищах людей, які не можуть пройти повз, і розповідаємо їхні історії так, щоб інші захотіли стати поруч. Так само я працюю з командами: спершу бачу людей, їхні сильні сторони й мотиви, а вже потім посади.</p>
+      <a class="more" href="https://caritas.ua/poklykani-diyaty/" target="_blank" rel="noopener">Читати історії проєкту</a>
+    </div>
+    <svg class="flower" viewBox="0 0 120 160" aria-hidden="true" focusable="false">
+      <path d="M60 158 C60 120 58 100 60 70" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M60 128 C42 122 32 108 30 94 C46 98 56 110 60 128Z" fill="#FFFFFF"/>
+      <path d="M60 112 C78 106 88 92 90 78 C74 82 64 94 60 112Z" fill="#FECC40"/>
+      <g transform="translate(60 48)">
+        <ellipse cx="0" cy="-26" rx="10" ry="20" fill="#FFFFFF"/>
+        <ellipse cx="0" cy="-26" rx="10" ry="20" fill="#FFFFFF" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-26" rx="10" ry="20" fill="#FFFFFF" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-26" rx="10" ry="20" fill="#FFFFFF" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-26" rx="10" ry="20" fill="#FFFFFF" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-26" rx="10" ry="20" fill="#FFFFFF" transform="rotate(300)"/>
+        <circle r="16" fill="#FECC40"/>
+        <circle r="6" fill="#0083CB"/>
+        <circle cx="-9" cy="-8" r="2.4" fill="#0083CB"/><circle cx="9" cy="-8" r="2.4" fill="#0083CB"/><circle cx="-9" cy="8" r="2.4" fill="#0083CB"/><circle cx="9" cy="8" r="2.4" fill="#0083CB"/>
+      </g>
+    </svg>
   </div>
 </section>
 
@@ -273,7 +312,7 @@ footer .wrap{padding-block:1.25rem;display:flex;justify-content:space-between;fl
     </div>
     <div class="ledger" id="ledger">
       <details class="role" data-s="ngo"><summary><span class="when">зараз</span><span class="org">Caritas Ukraine<span class="pos">зміни в комунікаціях і фандрейзингу</span></span><span class="plus" aria-hidden="true">+</span></summary>
-        <div class="body"><ul><li>Перебудова комунікацій і фандрейзингу великої благодійної інституції</li><li>Другий рік роботи</li></ul></div></details>
+        <div class="body"><ul><li>Перебудова комунікацій і фандрейзингу великої благодійної інституції</li><li>Авторка проєкту «Покликані діяти» про людей, які роблять свою «сродну працю»</li></ul></div></details>
       <details class="role" data-s="biz"><summary><span class="when">2020–2021</span><span class="org">Fedoriv Group<span class="pos">Head of Communication</span></span><span class="plus" aria-hidden="true">+</span></summary>
         <div class="body"><ul><li>Створила PR-відділ з нуля</li><li>Запустила соцмережі групи</li><li>Комерційні партнерства й виступи для всіх компаній групи</li><li>Tone of voice і запуск продукту «Джек»</li></ul></div></details>
       <details class="role" data-s="biz"><summary><span class="when">до 2022</span><span class="org">In White<span class="pos">CBDO, медичний одяг</span></span><span class="plus" aria-hidden="true">+</span></summary>
